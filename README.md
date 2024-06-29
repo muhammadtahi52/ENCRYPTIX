@@ -1,6 +1,6 @@
 # ENCRYPTIX 
 
-# Iris Flower Classification
+# Task 01:Iris Flower Classification
 
 This project demonstrates the classification of iris flower species using a Support Vector Machine (SVM). The iris dataset is a classic dataset used in machine learning and statistics.
 
@@ -61,5 +61,38 @@ def predict_iris_class(sepal_length, sepal_width, petal_length, petal_width):
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+# Task 02:Sales Prediction (Advertising Impact Analysis)
+
+## Overview
+This project explores the impact of advertising channels (TV, Radio, Newspaper) on sales using machine learning techniques.
+
+## Model Performance
+- **Mean Squared Error (MSE)**: 2.908
+- **R-squared Score (R²)**: 0.906
+
+These metrics indicate strong predictive accuracy, with the model explaining approximately 90.6% of the variance in sales based on advertising spends.
+
+## Analysis
+- **Visualization**: Included scatter plot shows the alignment between actual and predicted sales values, demonstrating the model's effectiveness.
+- **Conclusion**: The model performs well in predicting sales outcomes based on ad expenditures across different channels.
+
+## Usage
+### Making Predictions
+To predict sales for new advertising spends, use the following code snippet:
+```python
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Define the new advertising spends
+new_data = pd.DataFrame({'TV': [150, 200], 'Radio': [30, 40], 'Newspaper': [20, 25]})
+
+# Load the trained model
+model = LinearRegression()
+model.fit(X_train, y_train)  # Assuming X_train and y_train are defined earlier
+
+# Make predictions
+predictions = model.predict(new_data)
+print(predictions)
 
 
