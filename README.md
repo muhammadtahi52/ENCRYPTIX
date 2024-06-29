@@ -1,6 +1,6 @@
 # ENCRYPTIX 
 
-# Task 01:Iris Flower Classification
+# Project 01: Iris Flower Classification
 
 This project demonstrates the classification of iris flower species using a Support Vector Machine (SVM). The iris dataset is a classic dataset used in machine learning and statistics.
 
@@ -62,7 +62,7 @@ def predict_iris_class(sepal_length, sepal_width, petal_length, petal_width):
 
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
-# Task 02:Sales Prediction (Advertising Impact Analysis)
+# Project 02: Sales Prediction (Advertising Impact Analysis)
 
 ## Overview
 This project explores the impact of advertising channels (TV, Radio, Newspaper) on sales using machine learning techniques.
