@@ -77,7 +77,7 @@ These metrics indicate strong predictive accuracy, with the model explaining app
 - **Visualization**: Included scatter plot shows the alignment between actual and predicted sales values, demonstrating the model's effectiveness.
 - **Conclusion**: The model performs well in predicting sales outcomes based on ad expenditures across different channels.
 
-## Project 03: Credit Card Fraud Detection
+# Project 03: Credit Card Fraud Detection
 This project involves the detection of fraudulent credit card transactions using machine learning algorithms. The dataset consists of transactions made by European cardholders in September 2013. It includes 492 frauds out of 284,807 transactions, making it highly unbalanced with the positive class (frauds) accounting for only 0.172% of all transactions.
 
 ## Overview
