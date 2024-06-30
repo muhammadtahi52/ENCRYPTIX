@@ -77,22 +77,45 @@ These metrics indicate strong predictive accuracy, with the model explaining app
 - **Visualization**: Included scatter plot shows the alignment between actual and predicted sales values, demonstrating the model's effectiveness.
 - **Conclusion**: The model performs well in predicting sales outcomes based on ad expenditures across different channels.
 
-## Usage
-### Making Predictions
-To predict sales for new advertising spends, use the following code snippet:
-```python
-import pandas as pd
-from sklearn.linear_model import LinearRegression
+## Project 03: Credit Card Fraud Detection
+This project involves the detection of fraudulent credit card transactions using machine learning algorithms. The dataset consists of transactions made by European cardholders in September 2013. It includes 492 frauds out of 284,807 transactions, making it highly unbalanced with the positive class (frauds) accounting for only 0.172% of all transactions.
 
-# Define the new advertising spends
-new_data = pd.DataFrame({'TV': [150, 200], 'Radio': [30, 40], 'Newspaper': [20, 25]})
+## Overview
+The main objective of this project is to build a model that can accurately identify fraudulent transactions. We have utilized two machine learning algorithms for this purpose:
 
-# Load the trained model
-model = LinearRegression()
-model.fit(X_train, y_train)  # Assuming X_train and y_train are defined earlier
+## Random Forest Classifier
+## Logistic Regression
+Data Preparation
+Dataset: The dataset used is creditcard.csv, which contains transaction data along with a label indicating whether the transaction is fraudulent.
+Features: The features include various anonymized attributes (V1, V2, ..., V28) along with Amount and Time.
+Target: The target variable is Class, where 0 indicates a normal transaction and 1 indicates a fraudulent transaction.
+Exploratory Data Analysis
+Class Distribution
+The dataset is highly unbalanced. The distribution of classes is visualized below:
 
-# Make predictions
-predictions = model.predict(new_data)
-print(predictions)
+
+## Correlation Heatmap
+A heatmap is used to visualize the correlations between the features. This helps in understanding the relationships and dependencies between different variables:
+
+
+## Model Training and Evaluation
+Random Forest Classifier
+The Random Forest algorithm is used to train the model. The performance metrics are as follows:
+
+Accuracy:
+Error Rate:
+Specificity:
+Sensitivity:
+Logistic Regression
+Logistic Regression is also used to train the model. The performance metrics are as follows:
+
+Accuracy:
+Error Rate:
+Specificity:
+Sensitivity:
+
+## Conclusion
+This project demonstrates the use of machine learning algorithms to detect fraudulent credit card transactions. The Random Forest and Logistic Regression classifiers provide a comparative analysis, showing how different models can perform on highly imbalanced datasets.
+
 
 
